@@ -1,0 +1,842 @@
+* {
+    font-family: 'Raleway';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+h2 {
+    color: #3e3838cf;
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+.column {
+    flex-direction: column
+}
+
+
+/*aqui começa o body */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*aqui começa header */
+
+header {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    background-image: url(../imagens/london.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 100%;
+    background-color: #fff;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo a {
+    color: #f44336;
+    padding-left: 2%;
+    font-size: 1.4em;
+    font-family: 'Raleway';
+    text-decoration: none;
+    display: flex;
+    padding-top: 0.5%;
+}
+
+#logo a i {
+    margin-right: 1%;
+    padding-right: 20%;
+}
+
+#logo form {
+    padding-top: 0.5%;
+    margin-right: 1%;
+    border: none;
+    width: 50%;
+    display: flex;
+}
+
+#logo form input {
+    border: none;
+    width: 95%;
+}
+
+#logo form button {
+    border: none!important;
+    background-color: #fff;
+}
+
+#logo form button:hover {
+    background-color: #fff;
+}
+
+header#cabecalho #logo form button i {
+    border: none;
+    font-size: 1.5em;
+    color: #6a5e5e;
+    ;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+header .procura {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 70%;
+}
+
+.opcao-procura {
+    width: 100%;
+    display: flex;
+    height: 14%;
+}
+
+.flight,
+.hotel,
+.rental {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+    align-items: center;
+}
+
+.flight,
+.hotel,
+.rental,
+a {
+    font-family: 'Raleway';
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .flight,
+.flight:hover {
+    background-color: rgb(248, 60, 60);
+}
+
+.hotel:hover {
+    background-color: rgb(248, 60, 60);
+}
+
+.rental:hover {
+    background-color: rgb(248, 60, 60);
+}
+
+.pesquisa {
+    margin: 2%;
+}
+
+.pesquisa .titulo-h2 h2 {
+    font-size: 1.3em;
+    color: black;
+}
+
+.busca {
+    display: flex;
+}
+
+.busca form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #3e3838cf
+}
+
+.busca form label {
+    width: 50%;
+    font-size: 1em;
+    font-family: arial;
+    font-weight: normal;
+}
+
+.busca form label h3 {
+    width: 50%;
+    font-family: arial;
+    font-weight: normal;
+}
+
+.busca form label input {
+    width: 81%;
+    padding: 2%;
+    font-size: 1em;
+    font-family: arial;
+    font-weight: normal;
+}
+
+.busca form button {
+    margin-top: 5%;
+    padding: 1.8%;
+    width: 20%;
+    border-radius: 1px 1px 1px 1px;
+    color: #fff;
+    background-color: #1c1616a3;
+    font-size: 1em;
+    border: none;
+    font-family: 'Raleway';
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center
+}
+
+#conteudo article {
+    display: flex;
+}
+
+#conteudo .conteudo-imagens .titulo-h3 h3 {
+    font-size: 1.3em;
+}
+
+#conteudo article p {
+    color: #1c1a1aa6;
+}
+
+#conteudo article p .conteudo-span {
+    font-weight: bold;
+    color: black;
+}
+
+article .imagens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article .imagens .imagens-grandes {
+    margin-right: 2%;
+    flex: 1;
+}
+
+article .imagens .imagens-grandes img {
+    width: 96%;
+}
+
+section#conteudo article .conteudo-imagens .imagens .imagens-grandes p {
+    right: 75.9%;
+    bottom: -107%;
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+}
+
+article .imagens .imagens-pequenas {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+article .imagens .imagens-pequenas .imagens-pequenas-responsivas {
+    width: 48%;
+    margin-right: 2%;
+}
+
+article .imagens .imagens-pequenas .imagens-pequenas-responsivas img {
+    width: 100%;
+}
+
+#conteudo article .conteudo-imagens .imagens .imagens-pequenas .new-york p {
+    right: 43.5%;
+    bottom: -78%;
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+}
+
+#conteudo article .conteudo-imagens .imagens .imagens-pequenas .sao-francisco p {
+    right: 25.7%;
+    bottom: -78%;
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+}
+
+#conteudo article .conteudo-imagens .imagens .imagens-pequenas .pisa p {
+    right: 46.5%;
+    bottom: -108%;
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+}
+
+#conteudo article .conteudo-imagens .imagens .imagens-pequenas .paris p {
+    right: 29.9%;
+    bottom: -108%;
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+}
+
+#section-costa-montanha {
+    display: flex;
+    justify-content: center;
+}
+
+#costa-montanha .westcost-mountains {
+    display: flex;
+}
+
+article .westcost-mountains .imagens-medias {
+    display: flex;
+    flex: 1;
+}
+
+article .westcost-mountains .imagens-medias .west-mountains {
+    flex: 1;
+    margin-right: 2%;
+}
+
+article .westcost-mountains .imagens-medias .west-mountains .imagens-medias-responsivas img {
+    width: 100%;
+}
+
+#conteudo article .conteudo-imagens .imagens .imagens-grandes p {
+    right: 79.4%;
+    bottom: -47%;
+    position: absolute;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+article .westcost-mountains .descricao a {
+    text-decoration: none;
+    color: #1c1a1aa6;
+    padding-left: 4%;
+}
+
+article .westcost-mountains .descricao {
+    padding-left: 4%
+}
+
+article .westcost-mountains .descricao p .descricao-span {
+    color: #1c1a1a69;
+}
+
+#section-ofertas {
+    display: flex;
+    justify-content: center;
+}
+
+#ofertas {
+    display: flex;
+    background-color: #353333cb;
+    margin-top: 4%;
+    margin-bottom: 0;
+    padding-bottom: 2%;
+}
+
+#ofertas #titulo-ofertas {
+    margin-left: 2%;
+    color: #fff;
+    width: 100%;
+    display: flex;
+}
+
+#ofertas #titulo-ofertas h3 {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+}
+
+#ofertas #titulo-ofertas p {
+    font-size: 0.9em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: #ffff;
+}
+
+#ofertas #titulo-ofertas label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ofertas #titulo-ofertas label p {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+#ofertas #titulo-ofertas label input {
+    width: 95%;
+    padding: 1.2%;
+    font-size: 1.1em;
+    color: #8c8989;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+#ofertas #titulo-ofertas label button {
+    margin-top: 3%;
+    padding: 1.4%;
+    border-radius: 1px 1px 1px 1px;
+    color: #fff;
+    background-color: #e49292;
+    font-size: 1em;
+    border: none;
+    width: 15%;
+}
+
+#section-contatos {
+    display: flex;
+    justify-content: center;
+}
+
+#contato {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 4%;
+    padding-bottom: 2%;
+}
+
+#contato #contato-cadastro {
+    width: 100%;
+    display: flex;
+}
+
+#contato #contato-cadastro h3 {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+}
+
+#contato #contato-cadastro p {
+    font-size: 0.8em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#contato #contato-cadastro label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contato #contato-cadastro label i {
+    margin-right: 1%;
+    color: black;
+}
+
+#contato #contato-cadastro label p {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 0.8em;
+}
+
+#contato #contato-cadastro label input {
+    width: 100%;
+    padding: 1%;
+    font-size: 1.1em;
+    color: #534e4e;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#contato #contato-cadastro label button {
+    margin-top: 3%;
+    padding: 1.4%;
+    border-radius: 1px 1px 1px 1px;
+    color: #fff;
+    background-color: black;
+    font-size: 0.8em;
+    border: none;
+    width: 17%;
+}
+
+#rodape {
+    display: flex;
+    justify-content: center;
+}
+
+#rodape #titulo-rodape {
+    color: #726f6f94;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rodape #titulo-rodape #icones-sociais {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#rodape #titulo-rodape #icones-sociais a {
+    margin-right: 1%;
+    color: #726f6f94;
+    ;
+}
+
+#rodape #titulo-rodape #icones-sociais a i {
+    color: #5b5959d9;
+}
+
+#rodape #titulo-rodape a {
+    color: #5b5959d9;
+}
+
+@media (max-width:768px) {
+    header {
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        background-image: url(../imagens/london.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: none;
+        background-position: center;
+        flex-wrap: wrap;
+        padding-bottom: 5%;
+    }
+    #logo {
+        height: 10%;
+    }
+    #logo a {
+        padding-left: 20%;
+    }
+    #logo form input {
+        width: 50%;
+    }
+    .container {
+        width: 700px;
+    }
+    header .procura {
+        width: 80%;
+        height: 90%;
+    }
+    section#conteudo article .conteudo-imagens .imagens .imagens-grandes p {
+        right: 80.9%;
+        bottom: -47%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .new-york p {
+        right: 38%;
+        bottom: -24%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .sao-francisco p {
+        right: 11%;
+        bottom: -24%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .pisa p {
+        right: 43%;
+        bottom: -47%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .paris p {
+        right: 21%;
+        bottom: -47%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    article .westcost-mountains .descricao a {
+        text-decoration: none;
+        color: #1c1a1aa6;
+    }
+    .procura .pesquisa .busca form button {
+        width: 30%;
+    }
+}
+
+@media (max-width:450px) {
+    header {
+        background-color: #fff;
+        height: 400px;
+        padding: 2% 0 2% 0;
+        background-image: none!important;
+    }
+    header #logo a {
+        font-size: 1.7em;
+        padding-left: 5%;
+    }
+    #logo form input {
+        width: 85%;
+    }
+    .container {
+        width: 100%;
+    }
+    header .procura {
+        height: 100%;
+        width: 100%;
+    }
+    header .procura .opcao-procura {
+        margin-bottom: 5%;
+    }
+    header .procura .pesquisa {
+        width: 95%;
+    }
+    header .procura .pesquisa .busca form {
+        flex-direction: column;
+    }
+    #cabecalho .procura .pesquisa .busca form label {
+        width: 100%;
+    }
+    #cabecalho .procura .pesquisa .busca form label h3 {
+        margin: 1%;
+    }
+    #cabecalho .procura .pesquisa .busca form label input {
+        width: 95%;
+    }
+    #cabecalho .procura .pesquisa .busca form button {
+        width: 50%;
+        padding: 3%;
+    }
+    #conteudo {
+        margin-top: 0%;
+    }
+    #conteudo article {
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 20%;
+        height: 62%;
+        margin-top: 15%;
+    }
+    #conteudo .conteudo-imagens {
+        width: 100%;
+    }
+    #conteudo .conteudo-imagens .imagens {
+        flex-direction: column;
+    }
+    #conteudo .conteudo-imagens .imagens .imagens-grandes {
+        margin: 2% 0 2% 0;
+    }
+    section#conteudo article .conteudo-imagens .imagens .imagens-grandes p {
+        right: 71.9%;
+        bottom: -70%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .new-york p {
+        right: 77%;
+        bottom: -134%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .sao-francisco p {
+        right: 70%;
+        bottom: -199%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .pisa p {
+        right: 87%;
+        bottom: -263%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .paris p {
+        right: 86%;
+        bottom: -328%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo .conteudo-imagens .imagens .imagens-grandes img {
+        width: 100%;
+    }
+    #conteudo .conteudo-imagens .imagens .imagens-pequenas {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #conteudo .conteudo-imagens .imagens .imagens-pequenas .imagens-pequenas-responsivas {
+        width: 100%;
+        margin: 3% 0 3% 0;
+    }
+    section#section-costa-montanha #costa-montanha {
+        margin-top: 15%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #costa-montanha .westcost-mountains .imagens-medias {
+        flex-direction: column;
+    }
+    article .westcost-mountains .imagens-medias .west-mountains {
+        margin-right: 0%;
+        margin-bottom: 10%;
+    }
+    article .westcost-mountains .descricao a {
+        text-decoration: none;
+    }
+    article {
+        margin-bottom: 5%!important;
+    }
+    #section-ofertas #ofertas {
+        margin-top: 0%;
+    }
+    #ofertas #titulo-ofertas h3 {
+        font-size: 2.5em;
+    }
+    #ofertas #titulo-ofertas form label button {
+        width: 26%;
+    }
+    #section-contatos #contato {
+        margin-top: 0%!important;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #contato #contato-cadastro h3 {
+        font-size: 2em;
+    }
+    #contato #contato-cadastro form label button {
+        font-size: 1em;
+        width: 42%;
+        padding: 4%;
+    }
+    footer #titulo-rodape p a {
+        color: #726f6f94;
+    }
+}
+
+@media (max-width:320px) {
+    .titulo-h3 h3 {
+        font-size: 1.5em;
+    }
+    #cabecalho #logo a {
+        padding-left: 5%
+    }
+    #cabecalho .titulo-h2 {
+        display: flex;
+        justify-content: center;
+        padding: 2% 0 5% 0;
+    }
+    #cabecalho .titulo-h2 h2 {
+        font-size: 1.8em;
+        margin: 0;
+    }
+    #cabecalho .procura .pesquisa .busca form button {
+        font-size: 1.1em;
+        width: 58%;
+        padding: 3%;
+    }
+    #conteudo article {
+        margin-top: 0%!important;
+    }
+    #conteudo article .conteudo-imagens .titulo-h3 h3 {
+        font-size: 1.5em;
+    }
+    section#conteudo article .conteudo-imagens .imagens .imagens-grandes p {
+        right: 62.5%;
+        bottom: -42%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .new-york p {
+        right: 70%;
+        bottom: -87%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .sao-francisco p {
+        right: 59%;
+        bottom: -133%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .pisa p {
+        right: 83%;
+        bottom: -178%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #conteudo article .conteudo-imagens .imagens .imagens-pequenas .paris p {
+        right: 80%;
+        bottom: -225%;
+        position: absolute;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    article .westcost-mountains .imagens-medias .west-mountains {
+        margin-right: 0%;
+    }
+    #conteudo #costa-montanha .westcost-mountains .imagens-medias .west-mountains .descricao p {
+        width: 85%;
+    }
+    #conteudo #costa-montanha .westcost-mountains .imagens-medias .west-mountains .descricao {
+        margin-bottom: 15%;
+    }
+    #conteudo #costa-montanha .westcost-mountains .imagens-medias .west-mountains .descricao .buy-tikts {
+        padding-left: 5%;
+        margin-bottom: 2%;
+        text-decoration: none;
+        color: #1c1a1aa6;
+    }
+    #ofertas {
+        padding: 8% 0%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #ofertas #titulo-ofertas h3 {
+        font-size: 2.4em;
+    }
+    #ofertas #titulo-ofertas p {
+        margin-bottom: 5%;
+        font-size: 1.1em;
+    }
+    #ofertas #titulo-ofertas form label p {
+        font-size: 1.1em;
+    }
+    #ofertas #titulo-ofertas form label button {
+        width: 36%;
+        padding: 2.4%;
+    }
+    #contato {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #contato #contato-cadastro p {
+        margin-bottom: 5%;
+    }
+    #contato #contato-cadastro form label button {
+        width: 55%;
+    }
+}
